@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for GitHub Dark Mode Theme Vibes-->
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+        .btn-primary {
+            background-color: #238636;
+            border-color: #238636;
+        }
+        .btn-primary:hover {
+            background-color: #2ea043;
+            border-color: #2ea043;
+        }
+        .container {
+            max-width: 100%;
+        }
+        img {
+            border-radius: 8px;
+        }
+        /* Custom Card and Button Styling */
+        .btn {
+            color: #ffffff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+        <h4 class="mb-5">Çukurova Üniversitesi 1.5 Adana Öğrenci Takımları</h4>
+        <img src="assets/images/logo.jpg" alt="Logo" class="mb-4" style="max-width: 150px;">
+        <div class="d-grid gap-3 w-100" style="max-width: 400px;">
+            <a href="teams/team1/team1_home.html" class="btn btn-primary btn-lg">Takım 1</a>
+            <a href="teams/team2/team2_home.html" class="btn btn-primary btn-lg">Takım 2</a>
+            <a href="teams/team3/team3_home.html" class="btn btn-primary btn-lg">Takım 3</a>
+            <a href="teams/team4/team4_home.html" class="btn btn-primary btn-lg">Takım 4</a>
+            <a href="teams/team5/team5_home.html" class="btn btn-primary btn-lg">Takım 5</a>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+
+        //Firebase Configuration
+        const firebaseConfig = {
+          apiKey: "{API_KEY}",
+          authDomain: "{AUTHDOMAIN}",
+          projectId: "{PROJECTID}",
+          storageBucket: "{STORAGEBUCKET}",
+          messagingSenderId: "{MESSAGINGSENDERID}",
+          appId: "{APPID}"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>
